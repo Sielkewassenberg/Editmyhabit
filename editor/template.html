@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Referenties voor style documenten -->
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <link rel="stylesheet" type="text/css" href="../build/content-tools.min.css">
+</head>
+
+<body>
+    <!--
+        Je moet u html elmenten samen zetten per sectie. 
+        Eerst div maken met een classe. 
+        en dan een div toevoegen met volgende tag: <div data-editable data-name="learn-more"> </div>
+
+    -->
+    <!-- Titel H1 -->
+    <h1 data-fixture data-name="article-title">
+        Daily work-out planner
+    </h1>
+
+    <!-- Verwijzing naar link -->
+    <a data-ce-tag="p" data-fixture data-name="article-link" href="/test">
+    </a>
+
+    <!-- foto -->
+    <div data-ce-tag="img-fixture" data-fixture style="background-image: url('author-pic.jpg');" class="image-fixture">
+        <img src="author-pic.jpg" alt="Some image">
+    </div>
+
+    <!-- hier alles samen onder zetten  -->
+    <div data-editable data-name="article">
+        <!--  Paragraph element -->
+        <p>
+            by <b>Anthony Blackshaw</b> · 18th January 2015
+        </p>
+        <blockquote>
+            Writing poor quality code will dramatically reduce the time
+            you get to spend doing things you love, if you’re lucky
+            enough to leave a project shortly after such a contribution
+            everyone who subsequently has to work with your code will
+            think you an arsehole.
+        </blockquote>
+        <img src="image.png" alt="Example of bad variable names">
+    </div>
+    <!-- important refer like the picture  -->
+    <img src="../Schermafbeelding 2023-06-16 164218.png" alt="">
+
+    <!-- hier alles samen onder zetten  -->
+    <aside class="article__related">
+        <div data-editable data-name="author" class="[ article__author ]  [ author ]  [ editable ]">
+
+            <h3 class="author__about">About the author</h3>
+
+            <img src="author-pic.jpg" alt="Anthony Blackshaw" width="80" class="[ author__pic ]  [ align-right ]">
+
+            <p class="author__bio">
+                Anthony Blackshaw is a co-founder of Getme, an
+                employee owned company with a focus on web tech. He
+                enjoys writing and talking about tech, especially
+                code and the occasional Montecristo No.2s.
+            </p>
+
+        </div>
+        <div data-editable data-name="learn-more" class="[ article__learn-more ]  [ learn-more ]  [ editable ]">
+
+            <h3 data-ce-tag="static">Want to learn more?</h3>
+
+        </div>
+    </aside>
+
+    <!-- linken naar javascript-->
+    <script type="text/javascript" src="../build/content-tools.js"></script>
+    <script type="text/javascript" src="editor.js"></script>
+</body>
+
+</html>

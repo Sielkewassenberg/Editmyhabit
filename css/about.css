@@ -1,0 +1,234 @@
+/* Font detials  */
+@font-face {
+    font-family: 'canela';
+    src: url('"./font/Canela Family/Canela-Regular-Trial.otf"');
+    font-family: 'calibre';
+    src: url("./font/Calibre/CalibreRegular.otf");
+}
+
+/* Kleuren detials 
+  #FEF6F9                 licht roos 
+  #538EC8                 lichtblauw
+  #ED8312                 oranje
+  #DA0018                 rood
+  #DF387F                 donker roos
+*/
+
+/*gebruikte titels*/
+h2 {
+    font-family: "canela";
+    font-weight: 300;
+}
+
+p {
+    font-family: "calibre";
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: nitti, monospace;
+    font-style: normal;
+    font-weight: 700;
+    /*700 is bold 300 is normaal*/
+}
+
+h5 {
+    font-family: "canela";
+    font-size: 1vw;
+}
+
+h6 {
+    font-family: nitti, monospace;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+
+    /*GRID*/
+    .aboutlinks1 {
+        width: 47%;
+        float: left;
+        height: 100px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-left: 4.8%;
+        margin-top: -8px;
+
+    }
+
+    /*PICTURE*/
+    .aboutrechts1 {
+        width: 47%;
+        float: right;
+        height: 750px;
+        margin: 0;
+        padding-right: 1.2%;
+
+    }
+
+    .aboutrechts1 img {
+        height: 80%;
+        margin-top: 12%;
+    }
+
+    /*TEXT*/
+    .aboutlinks2 {
+        width: 47%;
+        float: left;
+        height: 750px;
+        border-right: 1px solid black;
+        margin-left: 4.8%;
+        margin-top: -758px;
+    }
+
+    .aboutlinks2 p {
+        margin-left: 15%;
+        width: 70%;
+        font-size: 1.7vw;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .aboutlinks2 h2 {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    /*CONTACT ME*/
+    .aboutrechts2 {
+        width: 47%;
+        float: right;
+        height: 100px;
+
+        margin-top: -6%;
+    }
+
+    hr {
+        border-bottom: 0.8px solid black;
+        width: 100%;
+    }
+
+    .aboutrechts2 h2 {
+        font-size: 2.5vw;
+        text-align: right;
+        margin-right: 25%;
+    }
+
+    .aboutlinks3 {
+        width: 47%;
+        float: left;
+        border-right: 1px solid black;
+        height: 100px;
+        margin-left: 4.8%;
+        margin-top: -5%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:hover {
+
+        color: #538EC8;
+    }
+
+    .line2 {
+        display: none;
+    }
+
+    .pop-up {
+        display: none;
+    }
+
+
+}
+
+/*I-pad*/
+@media screen and (min-width: 700px) and (max-width:1024px) {
+
+
+    /*PICTURE*/
+    .aboutrechts1 img {
+        margin-top: 15%;
+        width: 60%;
+        margin-left: 28%;
+    }
+
+    /*TEXT*/
+    .aboutlinks2 {
+        margin-top: 10%;
+        width: 60%;
+        margin-left: 28%;
+    }
+
+    .aboutlinks2 p {
+        font-size: 2.5vw;
+    }
+
+    .aboutlinks2 h2 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    /*CONTACT ME*/
+    .aboutrechts2 {
+        width: 100%;
+    }
+
+    hr {
+        border-bottom: 1px solid black;
+        margin-top: -3%;
+        width: 100%;
+    }
+
+    .line2 {
+        margin-top: 50%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:hover {
+        background-color: #538EC8;
+        color: #F1DDE3;
+    }
+
+    .aboutrechts2 h2 {
+        margin-top: -55%;
+        font-size: 4vw;
+        margin-left: 63%;
+    }
+
+    .pop-up {
+        display: none;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width:700px) {
+    .pop-up {
+        position: fixed;
+        top: 35%;
+        left: 30%;
+        width: 60%;
+        height: fit-content;
+        border: solid 1px black;
+    }
+
+    .pop-up h3 {
+        margin: 6%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+}

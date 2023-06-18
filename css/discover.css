@@ -1,0 +1,768 @@
+/* Font detials  */
+@font-face {
+    font-family: 'canela';
+    src: url('"./font/Canela Family/Canela-Regular-Trial.otf"');
+    font-family: 'calibre';
+    src: url("./font/Calibre/CalibreRegular.otf");
+}
+
+/* Kleuren detials 
+  #FEF6F9                 licht roos 
+  #538EC8                 lichtblauw
+  #ED8312                 oranje
+  #DA0018                 rood
+  #DF387F                 donker roos
+  #FEF6F9                 wit
+*/
+
+/*gebruikte titels*/
+
+p {
+    font-family: "calibre";
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+li {
+    font-family: "calibre";
+    font-weight: 300;
+    font-size: 1.5vw;
+    margin-left: 25%;
+    width: 150%;
+}
+
+h2 {
+    font-family: nitti, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-left: 25%;
+    width: 150%;
+}
+
+h3 {
+    font-family: nitti, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    /*700 is bold 300 is normaal*/
+}
+
+h5 {
+    font-family: "canela";
+    font-size: 1vw;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    * {
+        box-sizing: border-box
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 1.5em;
+
+        border: 1px solid #000;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #111111;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /*3*3*/
+    .parent {
+        display: grid;
+        grid-gap: 5px;
+        padding: 1em 0em 1em 1em;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .parent>div {
+        padding: 5px;
+        border-radius: 1px;
+        display: grid;
+        place-items: center;
+    }
+
+    .text {
+        font-family: "calibre";
+        color: #FEF6F9;
+        font-size: 80%;
+        font-weight: 600;
+    }
+
+    /* grid template*/
+    .discrechts1 {
+        width: 47%;
+        float: left;
+        height: fit-content;
+        margin: 0;
+        margin-top: -10px;
+        padding-right: 21.7px;
+        border-left: 1px solid black;
+    }
+
+    /*discover*/
+    .disclinks1 {
+        width: 47%;
+        float: left;
+        height: 3vw;
+        margin-top: -1vw;
+        border-bottom: 1px solid black;
+        margin-left: 4.8%;
+    }
+
+    /* alles voor de tekst van container één*/
+    .disclinks2_1 {
+        width: 47%;
+        float: left;
+        margin-left: -100%;
+        margin-top: 8%;
+    }
+
+    .disclinks2_1 h1 {
+        width: 150%;
+        margin-top: 7%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_1 h3 {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_1 p {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    /* dowload knop */
+    .disclinks3_1 {
+        width: 105%;
+        float: left;
+        height: 10%;
+        margin-left: -105%;
+        margin-top: 95%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .disclinks3_1 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_1 h3 {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_1 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_1:hover {
+        background-color: #4084bb;
+    }
+
+    /* alles voor de tekst van container twee*/
+    .disclinks2_2 {
+        width: 47%;
+        float: left;
+        height: 100%;
+        margin-left: -100%;
+        margin-top: 10%;
+    }
+
+    .disclinks2_2 h1 {
+        width: 150%;
+        margin-top: 7%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_2 h3 {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_2 p {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    /* dowload knop */
+    .disclinks3_2 {
+        width: 105%;
+        float: left;
+        height: 10%;
+        margin-left: -105%;
+        margin-top: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .disclinks3_2 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_2 h3 {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_2 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_2:hover {
+        background-color: #4084bb;
+    }
+
+
+    /* alles voor de tekst van container drie*/
+    .disclinks2_3 {
+        width: 47%;
+        float: left;
+        height: 100%;
+        margin-left: -100%;
+        margin-top: 10%;
+    }
+
+    .disclinks2_3 h1 {
+        width: 150%;
+        margin-top: 7%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_3 h3 {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .disclinks2_3 p {
+        width: 150%;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    /* dowload knop */
+    .disclinks3_3 {
+        width: 105%;
+        float: left;
+        height: 10%;
+        margin-left: -105%;
+        margin-top: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .disclinks3_3 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_3 h3 {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_3 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_3:hover {
+        background-color: #4084bb;
+    }
+
+    /*SLIDER*/
+    .disclinks4 h3 {
+        margin-top: -4%;
+        margin-left: -2%;
+        text-align: center;
+    }
+
+    .disclinks4 {
+        width: 47%;
+        float: left;
+        height: 50px;
+        margin-left: 4.8%;
+        margin-top: -6.5%;
+    }
+
+    .container {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /*hover foto's*/
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    #één:hover {
+        opacity: 0.5;
+        background-color: #ED8312;
+    }
+
+    #drie:hover {
+        opacity: 0.5;
+        background-color: #538EC8;
+    }
+
+    #vier:hover {
+        opacity: 0.5;
+        background-color: #00337A;
+    }
+
+    #vijf:hover {
+        opacity: 0.5;
+        background-color: #DF387F;
+    }
+
+    #acht:hover {
+        opacity: 0.5;
+        background-color: #DA0018;
+    }
+
+    #negen:hover {
+        opacity: 0.5;
+        background-color: #00337A;
+    }
+
+    .pop-up {
+        display: none;
+    }
+}
+
+/*I-pad*/
+@media screen and (min-width: 700px) and (max-width:1024px) {
+    * {
+        box-sizing: border-box
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0.1em;
+        border: 1px solid #000;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #111111;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /*3*3*/
+    .parent {
+        display: grid;
+        grid-gap: 1%;
+        padding: 1em 0em 1em 1em;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .parent>div {
+        padding: 5px;
+        border-radius: 1px;
+        display: grid;
+        place-items: center;
+    }
+
+    .text {
+        font-family: "calibre";
+        color: #FEF6F9;
+        font-size: 80%;
+        font-weight: 600;
+    }
+
+    /*discover*/
+    .discrechts1 {
+        width: 90%;
+        height: fit-content;
+        margin: 0;
+        padding-left: 16%;
+        border-left: 1px solid black;
+    }
+
+    /* tekst container één*/
+    .disclinks2_1 {
+        position: fixed;
+        margin-top: 85%;
+        width: 70%;
+    }
+
+    .disclinks2_1 h1 {
+        text-align: center;
+    }
+
+    .disclinks2_1 h3 {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .disclinks2_1 p {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /* dowload knop */
+    .disclinks3_1 {
+        position: fixed;
+        margin-top: 120%;
+        width: 100%;
+        height: 5%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-left: -15%;
+    }
+
+    .disclinks3_1 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_1 h3 {
+        margin-top: 2%;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_1 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_1:hover {
+        background-color: #4084bb;
+    }
+
+    /* tekst container twee*/
+    .disclinks2_2 {
+        position: fixed;
+        margin-top: 87%;
+        width: 70%;
+    }
+
+    .disclinks2_2 h1 {
+        text-align: center;
+    }
+
+    .disclinks2_2 h3 {
+        margin-top: -2%;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .disclinks2_2 p {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /* dowload knop */
+    .disclinks3_2 {
+        position: fixed;
+        margin-top: 124%;
+        width: 100%;
+        height: 5%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-left: -15%;
+    }
+
+    .disclinks3_2 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_2 h3 {
+        margin-top: 2%;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_2 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_2:hover {
+        background-color: #4084bb;
+    }
+
+    /* tekst container drie*/
+    .disclinks2_3 {
+        position: fixed;
+        margin-top: 87%;
+        width: 70%;
+    }
+
+    .disclinks2_3 h1 {
+        text-align: center;
+    }
+
+    .disclinks2_3 h3 {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .disclinks2_3 p {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /* dowload knop */
+    .disclinks3_3 {
+        position: fixed;
+        margin-top: 120%;
+        width: 100%;
+        height: 5%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-left: -15%;
+    }
+
+    .disclinks3_3 a {
+        text-decoration: none;
+    }
+
+    .disclinks3_3 h3 {
+        margin-top: 2%;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .disclinks3_3 h3:hover {
+        color: #FEF6F9;
+    }
+
+    .disclinks3_3:hover {
+        background-color: #4084bb;
+    }
+
+    /*SLIDER*/
+    .disclinks4 {
+        width: 100%;
+        height: 50px;
+        margin-left: 4.8%;
+        margin-top: 45%;
+    }
+
+    .disclinks4 h3 {
+        margin-top: -4%;
+        margin-left: -2%;
+        text-align: center;
+    }
+
+    .container {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /*hover foto's kleur*/
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    #één:hover {
+        opacity: 0.5;
+        background-color: #ED8312;
+    }
+
+    #drie:hover {
+        opacity: 0.5;
+        background-color: #538EC8;
+    }
+
+    #vier:hover {
+        opacity: 0.5;
+        background-color: #00337A;
+    }
+
+    #vijf:hover {
+        opacity: 0.5;
+        background-color: #DF387F;
+    }
+
+    #acht:hover {
+        opacity: 0.5;
+        background-color: #DA0018;
+    }
+
+    #negen:hover {
+        opacity: 0.5;
+        background-color: #00337A;
+    }
+
+    .pop-up {
+        display: none;
+    }
+
+}
+
+
+/*Mobile*/
+@media screen and (max-width:700px) {
+    .hide {
+        display: none;
+    }
+
+    .pop-up {
+        position: fixed;
+        top: 35%;
+        left: 30%;
+        width: 60%;
+        height: fit-content;
+        border: solid 1px black;
+    }
+
+    .pop-up h3 {
+        margin: 6%;
+        font-size: 24px;
+        text-align: center;
+    }
+}
