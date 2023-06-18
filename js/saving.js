@@ -8,22 +8,22 @@ function convertHTMLtoPDF() {
     } = window.jspdf;
     var pdfjs = document.querySelector('#divID');
 
-  var doc = new jsPDF('l', 'mm', 'a4');
-    
+    var doc = new jsPDF('l', 'mm', 'a4');
+
     var options = {
         callback: function (doc) {
             doc.save("planner.pdf");
         },
         x: 20, //positie van divID maar in units 1 units is 8 px
-        y: 0
+        y: 12
     };
 
-     var contentWidth = pdfjs.offsetWidth;
+    var contentWidth = pdfjs.offsetWidth;
     var pageWidth = a4[1];
     var scale = pageWidth / contentWidth;
 
     // Controleer of de inhoud groter is dan één pagina en schaal het indien nodig
-    if (contentHeight > pageHeight) {
+    if (contentWidth > pageWidth) {
         pdfjs.style.transformOrigin = 'top left';
         pdfjs.style.transform = 'scale(0.35)';
         options.scale = scale;
