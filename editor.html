@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel + fav-icon -->
+    <title>Edit My Habit</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.pink.ico">
+
+    <!-- Referenties voor style documenten -->
+    <link rel="stylesheet" type="text/css" href="./css/editor.css">
+    <link rel="stylesheet" type="text/css" href="./build/content-tools.min.css">
+    <link rel="stylesheet" href="./css/navigatie.css">
+
+    <!-- linken om div te kunnen opslaan-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./js/saving.js"></script>
+</head>
+
+<body>
+    <div class="hide">
+
+
+        <!-- hier moet alles in dat gedownload moet worden-->
+        <div class="size" id="divID">
+            <div class="container">
+                <div class="item header">
+                    <h1 data-fixture data-name="article-title">
+                        Daily work-out planner
+                    </h1>
+                </div>
+
+                <div class="item sidebar">
+                    <div data-editable class="how">
+                        <h2>Warm up?</h2>
+                        <h3>yes</h3>
+                        <h3>no</h3>
+                    </div>
+                    <div data-editable class="place">
+                        <h2>Where?</h2>
+                        <h3>@ home</h3>
+                        <h3>@ gym</h3>
+                        <h3>@ outside</h3>
+                        <h3>@ other</h3>
+                    </div>
+                </div>
+
+                <div data-editable class="item content-1">
+                    <table>
+                        <tr>
+                            <th>
+                                Excercise
+                            </th>
+                            <th> Reps</th>
+                            <th>Sets </th>
+                            <th style="width:70%">Notes</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item content-2">
+                    <div data-editable class="water-section">
+                        <h2 class="water-label">Water consumed:</h2>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                        <span class="water-droplet"></span>
+                    </div>
+                </div>
+                <div class="item content-3">
+                    <div data-editable>
+                        <h2>How did it feel? </h2>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <hr>
+                    </div>
+                    <div data-editable class="inline">
+                        <h3>good</h3>
+                        <h3>satisfied</h3>
+                        <h3>bwa</h3>
+                        <h3>bad day</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- knoppen -->
+
+        <input type="button" class="button" value="Convert Template to PDF" onclick="convertHTMLtoPDF()">
+        <!-- linken naar javascript-->
+        <script type="text/javascript" src="./build/content-tools.js"></script>
+        <script type="text/javascript" src="./js/editor.js"></script>
+
+        <!-- Navigatie-->
+        <nav class="main-menu">
+            <ul>
+                <li class="banner">
+                    <a href="home.html">
+                        <i class="fa fa-home fa-2x logo">
+                            <img src="images/navigatie/navigatie-titel.png" class="logo" height="80" alt="">
+                        </i>
+                    </a>
+                </li>
+                <br><br><br><br><br><br>
+                <li class="has-subnav">
+                    <a href="home.html">
+                        <i class="fa fa-laptop fa-2x"><img src="images/navigatie/naviagtie-1.png" height="50"
+                                alt=""></i>
+                        <span class="nav-text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="info.html">
+                        <i class="fa fa-list fa-2x"><img src="images/navigatie/navigatie-2.png" height="50" alt=""></i>
+                        <span class="nav-text">
+                            Info
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="discover.html">
+                        <i class="fa fa-folder-open fa-2x"><img src="images/navigatie/navigatie-3.png" height="50"
+                                alt=""></i>
+                        <span class="nav-text">
+                            Discover
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="editor.html">
+                        <i class="fa fa-bar-chart-o fa-2x"><img src="images/navigatie/navigatie-4.png" height="50"
+                                alt=""></i>
+                        <span class="nav-text">
+                            Editor
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fa fa-font fa-2x"><img src="images/navigatie/navigatie-5.png" height="50" alt=""></i>
+                        <span class="nav-text">
+                            About me
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- DESKTOP NOT SUPPORTED-->
+        <div class="pop-up">
+            <div class="popup-content">
+                <h3>Open this website on desktop for the best user experience</h3>
+            </div>
+        </div>
+</body>
+
+</html>

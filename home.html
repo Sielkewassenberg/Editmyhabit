@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel + fav-icon -->
+    <title>Edit My Habit</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.pink.ico">
+    <!-- Linken naar css -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navigatie.css">
+    <!-- Linken naar de javascript files + Alles over mijn animate cirkels -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./js/cirkels_home.js"></script>
+</head>
+
+<body onload="init();">
+    <!-- Plaats voor cirkels -->
+    <div id="animation_container">
+        <canvas id="canvas"></canvas>
+        <div id="dom_overlay_container">
+        </div>
+    </div>
+
+    <!-- HOMEPAGE -->
+    <div class="hide">
+        <!-- containers woorden-->
+        <div class="textbigdiv textbigdiv1">
+            <a href="info.html">
+                <h2 class="textbig">INFO</h2>
+            </a>
+        </div>
+
+        <div class="textbigdiv textbigdiv2">
+            <a href="discover.html">
+                <h2 class="textbig">DISCOVER</h2>
+            </a>
+        </div>
+        <div class="textbigdiv textbigdiv3">
+            <a href="editor.html">
+                <h2 class="textbig">EDITOR</h2>
+            </a>
+        </div>
+        <div class="textbigdiv textbigdiv4">
+            <a href="about.html">
+                <h2 class="textbig">ABOUT ME</h2>
+            </a>
+        </div>
+
+    </div>
+    <!-- Navigatie-->
+    <nav class="main-menu">
+        <ul>
+            <li class="banner">
+                <a href="home.html">
+                    <i class="fa fa-home fa-2x logo">
+                        <img src="images/navigatie/navigatie-titel.png" class="logo" height="80" alt="">
+                    </i>
+                </a>
+            </li>
+            <br><br><br><br><br><br>
+            <li class="has-subnav">
+                <a href="home.html">
+                    <i class="fa fa-laptop fa-2x"><img src="images/navigatie/naviagtie-1.png" height="50" alt=""></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="info.html">
+                    <i class="fa fa-list fa-2x"><img src="images/navigatie/navigatie-2.png" height="50" alt=""></i>
+                    <span class="nav-text">
+                        Info
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="discover.html">
+                    <i class="fa fa-folder-open fa-2x"><img src="images/navigatie/navigatie-3.png" height="50"
+                            alt=""></i>
+                    <span class="nav-text">
+                        Discover
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="editor.html">
+                    <i class="fa fa-bar-chart-o fa-2x"><img src="images/navigatie/navigatie-4.png" height="50"
+                            alt=""></i>
+                    <span class="nav-text">
+                        Editor
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fa fa-font fa-2x"><img src="images/navigatie/navigatie-5.png" height="50" alt=""></i>
+                    <span class="nav-text">
+                        About me
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- DESKTOP NOT SUPPORTED-->
+    <div class="pop-up">
+        <div class="popup-content">
+            <h3>Open this website on desktop for the best user experience</h3>
+        </div>
+    </div>
+</body>
+
+</html>
